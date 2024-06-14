@@ -1,0 +1,308 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+  }
+
+.title {
+    font-family: "Lato", cursive;
+    font-size: 4em;
+}
+
+.subtitle {
+    font-family: "Lato", cursive;
+    font-size: 1.5em;
+}
+  
+  /* Navbar */
+  .navbar {
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .navbar-brand {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar-brand:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #F5F5DC;
+    color:black
+  }
+  
+  .header-bg {
+    background-image: url('https://images.seattletimes.com/wp-content/uploads/2017/02/85C-Bread-Image-2.jpg?d=780x439');
+    background-size: cover;
+    background-position: center;
+    padding: 128px 16px;
+    text-align: center;
+    color: white;
+    font-family: "Lato", cursive;
+  }
+  
+.produto {
+    background-color: #F5F5DC;
+    border-radius: 8px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 40px); 
+    height: 300px;
+    perspective: 1000px;
+}
+  
+  .produto:nth-child(3n) {
+    margin-right: 0; 
+  }
+  
+  .produto:last-child {
+    margin-right: 0; 
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+  .produto:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 8px;
+    color: #333;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .produto:hover .face {
+    background-color: #d3db8c;
+    color: #000000;
+  }
+  
+  .face.back {
+    transform: rotateY(180deg);
+  }
+  
+  .produto img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+  
+  .produto h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .produto p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #F5F5DC;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+
+  .add-btn:hover {
+    background-color: #24c704;
+    color: white;
+    border: none;
+  }
+  
+  .btn-save:hover {
+    background-color: #414741;
+  }
+  
+  
+  .limpa-btn {
+    background-color: #b267f3;
+    color: white;
+    border: none;
+  }
+
+  .limpa-btn:hover {
+    background-color: #c263fd;
+    color: white;
+    border: none;
+  }
+  
+
+.btn-excluir {
+  align-items: center;
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 5px; 
+}
+
+.btn-excluir:hover {
+  background-color: #e74c3c;
+}
+
+.btn-save {
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 5px;
+}
+
+.btn-save-products:hover {
+  background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 40%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.modal-content button:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.social-icons i {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    opacity: 0.7;
+}
+  
+  

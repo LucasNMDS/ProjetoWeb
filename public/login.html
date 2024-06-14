@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Padaria Sonhadora - Home</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Qwigley&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="products.html">Produtos</a>
+            <a class="navbar-brand" href="fale.html">Fale Conosco</a>
+            <a class="navbar-brand active" href="#">Login</a>
+        </div>
+    </nav>
+
+    <header class="header-bg">
+        <div class="header-content">
+            <h1 class="title">Padaria Sonhadora</h1>
+            <p class="subtitle">Onde você compra sonhos!</p>
+        </div>
+    </header>
+
+    <div class="centered-div">
+        <h1 class="text-center">Autenticação</h1>
+        <br>
+        <h3 class="text-center" id="displayName">Você não está autenticado</h3>
+        <p id="loadEL"></p>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="emailInput">E-mail</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">Senha</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="Senha">
+            </div>
+        </form>
+        <br>
+        <button class="login-btn" id="loginBtn">Login</button>
+        <button class="signup-btn" id="signupBtn">Criar Conta</button>
+        <button class="google-login-btn" id="googleLoginBtn">Google</button>
+        <button class="logoutBtn" id="logoutBtn">Logout</button> 
+        <br>
+        <p class="text-center">
+            <button class="logoutBtn" id="logoutButton">Sair</button>
+        </p>
+    </div>
+        
+    <script type="module" src="JS/autentica.js"></script>
+    <script type="module" src="JS/conexao.js"></script>    
+
+    <footer class="footer">
+        <div class="social-icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Lucas Nascimento e Alan Rocha</p>
+        <p>Instituto Federal de Campinas</p>
+    </footer>
+</body>
+</html>

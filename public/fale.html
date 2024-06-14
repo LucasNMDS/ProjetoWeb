@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Padaria Sonhadora - Home</title>
+    <link rel="stylesheet" href="CSS/fale.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Qwigley&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="products.html">Produtos</a>
+            <a class="navbar-brand active" href="#">Fale Conosco</a>
+            <a class="navbar-brand" href="login.html">Login</a>
+
+        </div>
+    </nav>
+
+    <header class="header-bg">
+        <div class="header-content">
+            <h1 class="title">Padaria Sonhadora</h1>
+            <p class="subtitle">Onde você compra sonhos!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="contact-form">
+            <h1>Fale Conosco</h1>
+            <form id="contactForm" action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="nameInput">Nome</label>
+                    <input type="text" class="form-control" id="nameInput" name="name" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">E-mail</label>
+                    <input type="email" class="form-control" id="emailInput" name="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="messageInput">Mensagem</label>
+                    <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script type="module" src="JS/conexao.js"></script>
+    <script type="module" src="JS/fale.js"></script> 
+
+    <footer class="footer">
+        <div class="social-icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Lucas Nascimento e Alan Rocha</p>
+        <p>Instituto Federal de Campinas</p>
+    </footer>
+</body>
+
+</html>

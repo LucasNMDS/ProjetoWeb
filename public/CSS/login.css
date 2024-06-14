@@ -1,0 +1,99 @@
+body {
+    font-family: "Lato", cursive;
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-size: large;
+}
+
+.info-icon img {
+    width: 250px;
+    height: auto; 
+    border: 20px solid white; 
+    border-radius: 8px; 
+    margin-right: 40px; 
+    margin-left: 40px; 
+}
+
+
+.navbar {
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .navbar-brand {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar-brand:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #F5F5DC;
+    color:black
+  }
+
+.header-bg {
+    background-image: url('https://images.seattletimes.com/wp-content/uploads/2017/02/85C-Bread-Image-2.jpg?d=780x439');
+    background-size: cover;
+    background-position: center;
+    padding: 128px 16px;
+    text-align: center;
+    color: white;
+    font-family: "Lato", cursive;
+  }
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.centered-div {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px; /* Ajuste conforme necessário */
+}
+
+
+.info-text{
+    flex: 2;
+}
+
+.footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.social-icons i {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    opacity: 0.7;
+}
+

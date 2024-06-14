@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/products.css">
+  <title>Padaria Sonhadora - Nossos Produtos</title>
+  <link rel="stylesheet" href="CSS/fale.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Qwigley&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand active" href="#">Produtos</a>
+    <a class="navbar-brand" href="fale.html">Fale Conosco</a>
+    <a class="navbar-brand" href="login.html">Login</a>
+  </div>
+</nav>
+
+<header class="header-bg">
+  <h1 class="title">Padaria Sonhadora</h1>
+  <p class="subtitle">Onde você compra sonhos!</p>
+  <select id="search" onchange="filterProducts()">
+    <option value="all">Todos</option>
+    <option value="bebidas">Bebidas</option>
+    <option value="frios">Frios</option>
+    <option value="paes">Pães</option>
+    <option value="salgados">Salgados</option>
+    <option value="sobremesas">Sobremesas</option>
+  </select>
+</header>
+
+<div class="container form-container">
+  <h2>Adicionar Novo Produto</h2>
+  <form id="add-product-form" class="form-horizontal">
+    <div class="form-group">
+      <div class="row">
+        <div class="col">
+          <label for="nome" class="label">Nome:</label>
+          <input type="text" id="nome" name="nome" class="input-field">
+        </div>
+        <div class="col">
+          <label for="imagem" class="label">URL da Imagem:</label>
+          <input type="text" id="imagem" name="imagem" class="input-field">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="descricao" class="label">Descrição:</label>
+      <textarea id="descricao" name="descricao" class="input-field"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="button" onclick="addProduct()" class="btn add-btn">Adicionar Produto</button>
+      <button type="button" onclick="limparFormulario()" class="btn limpa-btn">Limpar Campos</button>
+    </div>
+  </form>
+  <button id="btn-save" class="btn-save" onclick="saveProductsToXML()">Salvar Produtos</button>
+</div>
+
+<footer class="footer">
+  <div class="social-icons">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+    <i class="fa fa-pinterest-p"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p>Lucas Nascimento e Alan Rocha</p>
+  <p>Instituto Federal de Campinas</p>
+</footer>
+
+<script type="module" src="JS/products.js" defer></script>
+<script type="module" src="JS/conexao.js"></script>
+
+</body>
+</html>
